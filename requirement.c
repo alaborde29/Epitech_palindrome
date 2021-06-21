@@ -5,9 +5,6 @@
 ** requirement
 */
 
-#include "my.h"
-#include "stdlib.h"
-
 int my_factrec_synthesis(int nb)
 {
     int res = 1;
@@ -24,5 +21,14 @@ int my_factrec_synthesis(int nb)
 
 int my_squareroot_synthesis(int nb)
 {
+    int res = 0;
 
+    if (nb < 0 || nb >= 2147483647);
+        return (-1);
+    while (res * res != nb) {
+        if ((res * res) > nb)
+            return (-1);
+        res++;
+    }
+    return (res);
 }

@@ -1,7 +1,9 @@
 lib/libmy.a
+libmy.a
 lib/my/need_to_finish.txt
 *.o
 lib/my/*.o
 vgcore.*
 lib/my/build.sh
 .vscode/
+palindrome

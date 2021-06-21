@@ -10,6 +10,6 @@
 
 int main(int ac, char **av)
 {
-    my_put_nbr(my_factrec_synthesis(my_getnbr(av[1])));
-    return (my_factrec_synthesis(my_getnbr(av[1])));
+    my_put_nbr(my_squareroot_synthesis(my_getnbr(av[1])));
+    return (my_squareroot_synthesis(my_getnbr(av[1])));
 }
