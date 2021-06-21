@@ -5,6 +5,13 @@
 ## Makefile
 ##
 
+TEST_SRC = 	tests/test_requirement.c		\
+			requirement.c					\
+
+TEST_NAME = unit_tests
+
+TEST_FLAGS	=	-lcriterion -lgcov -coverage -fprofile-arcs -ftest-coverage
+
 SRC		=	src/main.c				\
 			requirement.c			\
 			src/usage.c				\
@@ -23,11 +30,20 @@ $(NAME):	$(OBJ)
 			make -C lib/my
 			gcc -g -o $(NAME) $(OBJ) -Llib -lmy -Iinclude
 
+tests_run:  clean
+			gcc -o $(TEST_NAME) $(TEST_SRC) $(TEST_FLAGS) $(CFLAGS) -Llib/my/-lmy
+			./$(TEST_NAME)
+			gcovr --exclude tests
+
 clean:
 		rm -f *.o
+		rm -f tests/*.o
 
 fclean: clean
 		rm -f $(NAME)
+		rm -f $(TEST_NAME)
+		rm *.gcno
+		rm *.gcda
 		make fclean -C lib/my
 
 re:		fclean all

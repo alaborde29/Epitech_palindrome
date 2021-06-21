@@ -5,8 +5,6 @@
 ** requirement
 */
 
-#include "my.h"
-
 int my_factrec_synthesis(int nb)
 {
     int res = 1;
