@@ -6,16 +6,10 @@
 */
 
 #include "my.h"
+#include "palindrome.h"
 
-int main(void)
+int main(int ac, char **av)
 {
-    int a = 321;
-    char *str = "---++-+-++-++--+++--+-0";
-    int res = 0;
-
-    my_put_nbr(a);
-    my_putchar('\n');
-    res = my_getnbr(str);
-    my_put_nbr(res);
-    return (0);
+    my_put_nbr(my_factrec_synthesis(my_getnbr(av[1])));
+    return (my_factrec_synthesis(my_getnbr(av[1])));
 }

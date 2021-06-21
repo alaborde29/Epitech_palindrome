@@ -5,6 +5,8 @@
 ** my_swap_str
 */
 
+#include <stdlib.h>
+
 void switch_two_words(char *str1, char *str2)
 {
     char *temp = malloc(sizeof(*str1));

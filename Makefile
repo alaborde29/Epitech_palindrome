@@ -5,11 +5,12 @@
 ## Makefile
 ##
 
-SRC		=	main.c
+SRC		=	src/main.c				\
+			requirement.c			\
 
 OBJ		=	$(SRC: .c=.o)
 
-NAME	= 	name
+NAME	= 	palindrome
 
 all: 		$(NAME)
 

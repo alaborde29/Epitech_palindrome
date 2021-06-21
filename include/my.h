@@ -38,5 +38,10 @@ int my_showstr(char const *str);
 int my_showmem(char const *str, int size);
 char *my_strcat(char *dest, char const *src);
 char *my_strncat(char *dest, char const *src, int nb);
+int my_show_word_array(char * const *tab);
+int is_alphanum(char c);
+char **my_str_to_word_array(char const *str);
+int *copy_int_array(int *src, int *dest, int size);
+void switch_two_words(char *str1, char *str2);
 
 #endif /* !MY_H_ */
