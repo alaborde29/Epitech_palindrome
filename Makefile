@@ -7,6 +7,11 @@
 
 SRC		=	src/main.c				\
 			requirement.c			\
+			src/usage.c				\
+			src/parsing.c			\
+			src/palindrome.c		\
+			src/error_handling.c	\
+
 
 OBJ		=	$(SRC: .c=.o)
 

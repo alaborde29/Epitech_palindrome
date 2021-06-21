@@ -2,13 +2,10 @@
 ** EPITECH PROJECT, 2021
 ** B-SYN-200-NAN-2-1-palindrome-alexandre.laborde
 ** File description:
-** palindrome
+** error_handling
 */
 
-#include "my.h"
-#include "palindrome.h"
-
-int palindrome(parsing_t args)
+int error_handling(int ac, char **av)
 {
-    
+    return (-1);
 }

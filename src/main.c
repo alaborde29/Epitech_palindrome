@@ -10,6 +10,11 @@
 
 int main(int ac, char **av)
 {
-    my_put_nbr(my_squareroot_synthesis(my_getnbr(av[1])));
-    return (my_squareroot_synthesis(my_getnbr(av[1])));
+    if (ac == 2 && my_strcmp(av[1], "-h") == 0) {
+        usage();
+        return (0);
+    }
+    if (error_handling(ac, av) == -1)
+        return (84);
+    return (palindrome(parsing(1, 0)));
 }

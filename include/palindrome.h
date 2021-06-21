@@ -5,12 +5,28 @@
 ** palindrome
 */
 
-#define MAX_INT 2147483646
-
 #ifndef PALINDROME_H_
 #define PALINDROME_H_
 
+typedef struct parsing_s
+{
+    int n;
+    int n_val;
+    int p;
+    int p_val;
+    int b;
+    int b_val;
+    int imin;
+    int imin_val;
+    int imax;
+    int imax_val;
+}parsing_t;
+
+int error_handling(int ac, char **av);
 int my_factrec_synthesis(int nb);
 int my_squareroot_synthesis(int nb);
+void usage(void);
+parsing_t parsing(int ac, char **av);
+int palindrome(parsing_t args);
 
 #endif /* !PALINDROME_H_ */
