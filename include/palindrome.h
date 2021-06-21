@@ -28,5 +28,8 @@ int my_squareroot_synthesis(int nb);
 void usage(void);
 parsing_t parsing(int ac, char **av);
 int palindrome(parsing_t args);
+int error_b(int ac, char **av, int pos);
+int error_imin(int ac, char **av, int pos);
+int error_imax(int ac, char **av, int pos);
 
 #endif /* !PALINDROME_H_ */

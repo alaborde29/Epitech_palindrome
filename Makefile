@@ -6,7 +6,12 @@
 ##
 
 TEST_SRC = 	tests/test_requirement.c		\
+			tests/test_palindrome.c			\
 			requirement.c					\
+			src/parsing.c					\
+			src/palindrome.c				\
+			src/error_handling.c			\
+			src/flag_errors.c				\
 
 TEST_NAME = unit_tests
 
@@ -18,6 +23,7 @@ SRC		=	src/main.c				\
 			src/parsing.c			\
 			src/palindrome.c		\
 			src/error_handling.c	\
+			src/flag_errors.c		\
 
 
 OBJ		=	$(SRC: .c=.o)
