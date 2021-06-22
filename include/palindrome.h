@@ -36,5 +36,10 @@ int error_imax(int ac, char **av, int pos);
 int int_to_be_transformed(int nb, parsing_t args);
 char *my_nbr_to_str(int nb);
 int is_nb_palindrome(int nb);
+int is_nb_palindrome(int nb);
+int reverse_number(int nb);
+void print_solution(int nb, parsing_t args);
+int find_this_palindrom(int nb, parsing_t args);
+int do_p_flag(parsing_t args);
 
 #endif /* !PALINDROME_H_ */

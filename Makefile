@@ -26,6 +26,7 @@ SRC		=	src/main.c					\
 			src/flag_errors.c			\
 			src/int_to_be_transformed.c	\
 			src/my_nbr_to_str.c			\
+			src/palindrom_finder.c		\
 
 OBJ		=	$(SRC: .c=.o)
 
