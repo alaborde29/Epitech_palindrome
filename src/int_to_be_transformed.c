@@ -49,7 +49,7 @@ int int_to_be_transformed(int nb, parsing_t args)
     int reverse = reverse_number(nb);
     int res = 0;
 
-    if (args.current_inc == args.imax_val || nb > 2147483647) {
+    if (args.current_inc == args.imax_val + 1 || nb > 2147483647) {
         my_putstr("no solution\n");
         return (0);
     }

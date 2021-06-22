@@ -16,7 +16,7 @@ int find_this_palindrom(int nb, parsing_t args)
     int reverse = reverse_number(nb);
     int res = 0;
 
-    if (nb > args.p_val || args.current_inc == args.imax_val \
+    if (nb > args.p_val || args.current_inc == args.imax_val + 1 \
     || nb > 2147483647)
         return (0);
     if (nb == args.p_val && args.current_inc >= args.imin_val) {
