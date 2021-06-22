@@ -10,5 +10,9 @@
 
 int palindrome(parsing_t args)
 {
-    
+    if (args.b == 1)
+        return (int_to_be_transformed(args.b_val, args));
+    if (args.n == 1)
+        return (int_to_be_transformed(args.n_val, args));
+    return (0);
 }

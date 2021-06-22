@@ -31,5 +31,8 @@ int palindrome(parsing_t args);
 int error_b(int ac, char **av, int pos);
 int error_imin(int ac, char **av, int pos);
 int error_imax(int ac, char **av, int pos);
+int int_to_be_transformed(int nb, parsing_t args);
+char *my_nbr_to_str(int nb);
+int is_nb_palindrome(int nb);
 
 #endif /* !PALINDROME_H_ */

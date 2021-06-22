@@ -7,6 +7,7 @@
 
 #include "my.h"
 #include "palindrome.h"
+#include "test.h"
 
 int main(int ac, char **av)
 {
@@ -17,6 +18,5 @@ int main(int ac, char **av)
     if (error_handling(ac, av) == -1)
         return (84);
     my_putstr("PASS");
-    // return (palindrome(parsing(1, 0)));
-    return (0);
+    return (palindrome(parsing(ac, av)));
 }
