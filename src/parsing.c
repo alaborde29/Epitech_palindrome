@@ -78,6 +78,5 @@ parsing_t parsing(int ac, char **av)
         args = parsing_next(ac, av, i, args);
         i++;
     }
-    //print_struct(args);
     return (args);
 }

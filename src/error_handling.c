@@ -63,6 +63,8 @@ int facult_arg_errors(int ac, char **av)
     return (0);
 }
 
+// penser a verifier le palindrome dans la base adequate.
+
 int error_handling(int ac, char **av)
 {
     if (ac < 3)
@@ -72,7 +74,8 @@ int error_handling(int ac, char **av)
     if (my_getnbr(av[2]) < 0 || my_getnbr(av[2]) > 2147483647 \
     || my_str_isnum(av[2]) == 0)
         return (-1);
-    if (my_strcmp(av[1], "-p") == 0 && is_nb_palindrome(my_getnbr(av[2])) == -1)
+    if (my_strcmp(av[1], "-p") == 0 && \
+    is_nb_palindrome(my_getnbr(av[2]), 10) == -1)
         return (-1);
     if (ac > 3) {
         if (facult_arg_errors(ac, av) == -1)

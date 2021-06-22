@@ -17,6 +17,5 @@ int main(int ac, char **av)
     }
     if (error_handling(ac, av) == -1)
         return (84);
-    // my_putstr("PASS");
     return (palindrome(parsing(ac, av)));
 }

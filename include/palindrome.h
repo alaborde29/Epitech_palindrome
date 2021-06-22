@@ -35,11 +35,12 @@ int error_imin(int ac, char **av, int pos);
 int error_imax(int ac, char **av, int pos);
 int int_to_be_transformed(int nb, parsing_t args);
 char *my_nbr_to_str(int nb);
-int is_nb_palindrome(int nb);
-int is_nb_palindrome(int nb);
-int reverse_number(int nb);
+int is_nb_palindrome(int nb, int base);
+int reverse_number(int nb, int base);
 void print_solution(int nb, parsing_t args);
 int find_this_palindrom(int nb, parsing_t args);
 int do_p_flag(parsing_t args);
+char *decimal_base_converter(int nb, int base);
+int base_to_decimal_converter(char *str, int base, int new_base);
 
 #endif /* !PALINDROME_H_ */

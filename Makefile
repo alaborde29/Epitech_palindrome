@@ -27,6 +27,7 @@ SRC		=	src/main.c					\
 			src/int_to_be_transformed.c	\
 			src/my_nbr_to_str.c			\
 			src/palindrom_finder.c		\
+			src/base_converter.c		\
 
 OBJ		=	$(SRC: .c=.o)
 
