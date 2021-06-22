@@ -20,6 +20,8 @@ typedef struct parsing_s
     int imin_val;
     int imax;
     int imax_val;
+    int current_inc;
+    int sol;
 }parsing_t;
 
 int error_handling(int ac, char **av);

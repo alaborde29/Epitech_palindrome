@@ -23,6 +23,8 @@ parsing_t init_parsing_struct(void)
     args.imin_val = 0;
     args.imax = 1;
     args.imax_val = 100;
+    args.current_inc = 0;
+    args.sol = 0;
     return (args);
 }
 
@@ -55,6 +57,7 @@ void print_struct(parsing_t args)
     printf("args.imax_val : %d\n", args.imax_val);
     printf("args.imin : %d\n", args.imin);
     printf("args.imin_val : %d\n", args.imin_val);
+    printf("args.current_inc : %d\n", args.current_inc);
 }
 
 parsing_t parsing(int ac, char **av)

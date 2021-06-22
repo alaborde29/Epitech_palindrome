@@ -33,7 +33,7 @@ int error_imax(int ac, char **av, int pos)
     int i = 0;
     int num = my_getnbr(av[pos + 1]);
 
-    if (my_getnbr(av[pos + 1]) < 2 || my_getnbr(av[pos + 1]) > 10)
+    if (my_getnbr(av[pos + 1]) < 0 || my_getnbr(av[pos + 1]) > 2147483647)
         return (-1);
     while (i != ac) {
         if (my_strcmp(av[i], "-imin") == 0 && my_getnbr(av[i + 1]) > num)

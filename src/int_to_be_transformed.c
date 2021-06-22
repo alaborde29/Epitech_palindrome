@@ -38,21 +38,28 @@ int is_nb_palindrome(int nb)
     return (0);
 }
 
-void print_end(void)
+void print_end(int nb, parsing_t args)
 {
-    my_putstr("done");
+    printf("%d leads to %d in %d iterations(s) in base %d\n", \
+    args.n_val, nb, args.current_inc, args.b_val);
 }
 
 int int_to_be_transformed(int nb, parsing_t args)
 {
     int reverse = reverse_number(nb);
-
     int res = 0;
 
-    if (is_nb_palindrome(nb) == 0) {
-        print_end();
+    if (args.current_inc == args.imax_val || nb > 2147483647) {
+        if (args.sol == 0)
+            my_putstr("no solution\n");
+        return (0);
+    }
+    if (is_nb_palindrome(nb) == 0 && args.current_inc >= args.imin_val) {
+        print_end(nb, args);
+        args.sol = 1;
         return (0);
     }
     res = nb + reverse;
+    args.current_inc = args.current_inc + 1;
     return (int_to_be_transformed(res, args));
 }
