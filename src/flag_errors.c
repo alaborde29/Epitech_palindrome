@@ -12,6 +12,7 @@ int error_b(int ac, char **av, int pos)
     if (my_getnbr(av[pos + 1]) < 2 || my_getnbr(av[pos + 1]) > 10 \
     || my_str_isnum(av[pos + 1]) == 0)
         return (-1);
+    return (0);
 }
 
 int error_imin(int ac, char **av, int pos)
