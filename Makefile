@@ -12,6 +12,10 @@ TEST_SRC = 	tests/test_requirement.c		\
 			src/palindrome.c				\
 			src/error_handling.c			\
 			src/flag_errors.c				\
+			src/int_to_be_transformed.c		\
+			src/base_converter.c			\
+			src/my_nbr_to_str.c				\
+			src/palindrom_finder.c			\
 
 TEST_NAME = unit_tests
 
