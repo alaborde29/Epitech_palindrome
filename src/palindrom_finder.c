@@ -28,8 +28,6 @@ int find_this_palindrom(int nb, parsing_t args)
     return (find_this_palindrom(res, args));
 }
 
-//verifier si la valeur de p_val est un palindrome
-
 int do_p_flag(parsing_t args)
 {
     args.n_val = 0;
