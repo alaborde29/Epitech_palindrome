@@ -599,4 +599,20 @@ Test(palindrome, test_no_solution)
     cr_assert_eq(palindrome(args), 0);
 }
 
-//test int_to_be_transformed
+Test(palindrome, test_no_solution_p)
+{
+    char **av = malloc(sizeof(char *) * 10);
+    int ac = 7;
+    parsing_t args;
+
+    av[0] = "./palindrome";
+    av[1] = "-p";
+    av[2] = "363";
+    av[3] = "-b";
+    av[4] = "10";
+    av[5] = "-imin";
+    av[6] = "7";
+    args = parsing(ac, av);
+
+    cr_assert_eq(palindrome(args), 0);
+}
