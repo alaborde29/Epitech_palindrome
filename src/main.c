@@ -8,6 +8,7 @@
 #include "my.h"
 #include "palindrome.h"
 #include "test.h"
+#include <unistd.h>
 
 int main(int ac, char **av)
 {
@@ -15,7 +16,9 @@ int main(int ac, char **av)
         usage();
         return (0);
     }
-    if (error_handling(ac, av) == -1)
+    if (error_handling(ac, av) == -1) {
+        write(2, "invalid argument\n", 17);
         return (84);
+    }
     return (palindrome(parsing(ac, av)));
 }

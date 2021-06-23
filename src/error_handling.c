@@ -41,10 +41,8 @@ int same_flags(int ac, char **av)
 
 int facult_arg_errors(int ac, char **av)
 {
-    if (ac % 2 != 1 || ac > 9) {
-        my_putstr("invalid argument");
+    if (ac % 2 != 1 || ac > 9)
         return (-1);
-    }
     if (ac >= 5) {
         if (my_strcmp(av[3], "-b") != 0 && my_strcmp(av[3], "-imin") \
         != 0 && my_strcmp(av[3], "-imax") != 0)
