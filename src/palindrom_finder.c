@@ -31,9 +31,13 @@ int find_this_palindrom(int nb, parsing_t args)
 int do_p_flag(parsing_t args)
 {
     args.n_val = 0;
+    int total = 0;
+
     while (args.n_val != args.p_val + 1) {
-        find_this_palindrom(args.n_val, args);
+        total = find_this_palindrom(args.n_val, args);
         args.n_val++;
     }
+    if (total == 0)
+        my_putstr("no solution\n");
     return (0);
 }
