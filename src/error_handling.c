@@ -50,7 +50,7 @@ int facult_arg_errors(int ac, char **av)
         != 0 && my_strcmp(av[3], "-imax") != 0)
             return (-1);
     }
-    if (ac >= 7) {
+    if (ac == 7) {
         if (same_flags(ac, av) == -1 || (my_strcmp(av[5], "-b") != 0 && \
         my_strcmp(av[5], "-imin") != 0 && my_strcmp(av[5], "-imax")) != 0)
             return (-1);

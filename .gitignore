@@ -6,4 +6,6 @@ lib/my/*.o
 vgcore.*
 lib/my/build.sh
 .vscode/
-palindrome
+palindrom
+*.gc*
+unit_tests

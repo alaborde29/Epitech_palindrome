@@ -14,5 +14,4 @@ int palindrome(parsing_t args)
         return (do_p_flag(args));
     if (args.n == 1)
         return (int_to_be_transformed(args.n_val, args));
-    return (0);
 }

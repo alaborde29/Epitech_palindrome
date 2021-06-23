@@ -45,21 +45,6 @@ parsing_t parsing_next(int ac, char **av, int i, parsing_t args)
     return (args);
 }
 
-void print_struct(parsing_t args)
-{
-    printf("\nargs.b : %d\n", args.b);
-    printf("args.bval : %d\n", args.b_val);
-    printf("args.n : %d\n", args.n);
-    printf("args.n_val : %d\n", args.n_val);
-    printf("args.p : %d\n", args.p);
-    printf("args.p_val : %d\n", args.p_val);
-    printf("args.imax : %d\n", args.imax);
-    printf("args.imax_val : %d\n", args.imax_val);
-    printf("args.imin : %d\n", args.imin);
-    printf("args.imin_val : %d\n", args.imin_val);
-    printf("args.current_inc : %d\n", args.current_inc);
-}
-
 parsing_t parsing(int ac, char **av)
 {
     parsing_t args = init_parsing_struct();
