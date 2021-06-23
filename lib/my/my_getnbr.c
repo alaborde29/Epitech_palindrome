@@ -45,5 +45,7 @@ int my_getnbr(char const *str)
         num_size--;
         i++;
     }
+    if (nb > 2147483647)
+        return (0);
     return (nb * sign);
 }

@@ -17,8 +17,11 @@ int find_this_palindrom(int nb, parsing_t args)
     int res = 0;
 
     if (nb > args.p_val || args.current_inc == args.imax_val + 1 \
-    || nb > 2147483647)
+    || nb > 2147483647) {
+        if (args.sol != 0)
+            return (1);
         return (0);
+    }
     if (nb == args.p_val && args.current_inc >= args.imin_val) {
         print_solution(nb, args);
         args.sol = 1;
@@ -31,13 +34,13 @@ int find_this_palindrom(int nb, parsing_t args)
 int do_p_flag(parsing_t args)
 {
     args.n_val = 0;
-    int total = 0;
+    int sol = 0;
 
     while (args.n_val != args.p_val + 1) {
-        total = find_this_palindrom(args.n_val, args);
+        sol = find_this_palindrom(args.n_val, args);
         args.n_val++;
     }
-    if (total == 0)
+    if (sol == 0)
         my_putstr("no solution\n");
     return (0);
 }
