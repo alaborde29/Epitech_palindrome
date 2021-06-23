@@ -49,7 +49,7 @@ int is_nb_palindrome(int nb, int base)
 
 void print_solution(int nb, parsing_t args)
 {
-    printf("%d leads to %d in %d iterations(s) in base %d\n", \
+    printf("%d leads to %d in %d iteration(s) in base %d\n", \
     args.n_val, nb, args.current_inc, args.b_val);
 }
 
